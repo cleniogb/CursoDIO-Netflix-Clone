@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+
+    <!--responsividade-->
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <!--owl css-->
+    <link rel="stylesheet" href="css/owl/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl/owl.theme.default.min.css">
+   
+    
+    <title>Netflix Clone</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h2 class="logo">NETFLIX</h2>
+            <nav>
+                <a href="#">Início</a>
+                <a href="#">Séries</a>
+                <a href="#">Filmes</a>
+                <a href="#">Documentários</a>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="filme-principal">
+            <div class="container">
+                <h3 class="titulo">O Método Kominsky (2018)</h3>
+                <p class="descricao">
+                    O professor de teatro Sandy Kominsky e seu melhor amigo Norman Newlander enfrentam as alegrias e tristezas da velhice com muito bom humor.
+                </p>
+
+                <div class="botoes">
+                    <button role="button" class="botao" onclick="assistir('https://www.youtube.com/watch?v=Aj8ua1zQPSs')">
+                        <i class="fas fa-play"></i>
+                        Assistir                    
+                    </button>
+                    <button role="button" class="botao" onclick="informacao('https://www.imdb.com/title/tt7255502/?ref_=fn_al_tt_1')">
+						<i class="fas fa-info-circle"></i>
+                        Mais Informações
+                    </button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div class="carrosel-filmes">
+        <div class="owl-carousel owl-theme">
+                <div class="item">
+                    <img class="box-filme" src="img/mini_loki.jpg" onclick="informacao('https://www.imdb.com/title/tt9140554/?ref_=fn_al_tt_1')" alt="" srcset="">
+                </div>
+                <div class="item">
+                    <img class="box-filme" src="img/mini_wanda-vision.jpg" onclick="informacao('https://www.imdb.com/title/tt9140560/?ref_=nv_sr_srsg_0')" alt="" srcset="">
+                </div>
+                <div class="item">
+                    <img class="box-filme" src="img/mini_liga-da-justica-snyder-cut.jpg" onclick="informacao('https://www.imdb.com/title/tt12361974/?ref_=nv_sr_srsg_0')" alt="" srcset="">
+                </div>
+                <div class="item">
+                    <img class="box-filme" src="img/mini_infiltrado.jpg" onclick="informacao('https://www.imdb.com/title/tt11083552/')" alt="" srcset="">
+                </div>
+                <div class="item">
+                    <img class="box-filme" src="img/mini_viuva-negra.jpg" onclick="informacao('https://www.imdb.com/title/tt3480822/?ref_=fn_al_tt_1')" alt="" srcset="">
+                </div>
+                <div class="item">
+                    <img class="box-filme" src="img/mini_breaking-bad.jpg" onclick="informacao('https://www.imdb.com/title/tt0903747/?ref_=nv_sr_srsg_0')" alt="" srcset="">
+                </div>
+                <div class="item">
+                    <img class="box-filme" src="img/mini_got.jpg" onclick="informacao('https://www.imdb.com/title/tt0944947/?ref_=nv_sr_srsg_0')" alt="" srcset="">
+                </div>
+                <div class="item">
+                    <img class="box-filme" src="img/mini_lupin.jpg" onclick="informacao(https://www.imdb.com/title/tt2531336/?ref_=fn_al_tt_1')" alt="" srcset="">
+                </div>
+                <div class="item">
+                    <img class="box-filme" src="img/mini_mentes-criminosas.jpg" onclick="informacao('https://www.imdb.com/title/tt0452046/?ref_=fn_al_tt_1')" alt="" srcset="">
+                </div>
+                <div class="item">
+                    <img class="box-filme" src="img/mini_peaky-blinders.jpg" onclick="informacao('https://www.imdb.com/title/tt2442560/?ref_=nv_sr_srsg_0')" alt="" srcset="">
+                </div>
+        </div>
+    </div>
+    
+
+    <script src="https://kit.fontawesome.com/2c36e9b7b1.js"></script>
+    <script src="js/owl/jquery.min.js"></script>
+    <script src="js/owl/owl.carousel.min.js"></script>
+    <script src="js/owl/setup.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+</html>
